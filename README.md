@@ -1,19 +1,23 @@
 # 💀 The Hangman 💀 
 
-Try a letter, 🅰️, 🅱️, 💤 ... etc ... 
+ ## 🧾 RULES 🧾
 
-If it's not a letter that can be found in the word 🤔 you are looking for, then you lose the "point" 😤.
+> - A word is generated randomly; you have to guess it, one by one letter.
 
-## STACK :
+> - Try a letter, 🅰️, 🅱️, 💤 ... etc ... 
 
-- VITE
-- REACT
-- TYPESCRIPT
+> - If it's not a letter that can be found in the word you're looking for 🤔, then you lose one "point" 😤 ( A leg, An arm ... ). 
 
-### Start the project with :
+## 🛠️ STACK 🛠️
+
+> - VITE
+> - REACT
+> - TYPESCRIPT
+
+## 🚀 START  🚀
+
+> - Open the terminal and type
 
 ```bash
  npm run dev
  ```
-
- 🚀
