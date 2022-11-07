@@ -2,7 +2,7 @@
 
  ## 🧾 RULES 🧾
 
-> - A word is generated randomly; you have to guess it, one by one letter.
+> - A word is randomly generated : you have to guess it, one by one letter.
 
 > - Try a letter, 🅰️, 🅱️, 💤 ... etc ... 
 
