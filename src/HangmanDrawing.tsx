@@ -56,12 +56,12 @@ const LEFT_ARM = (
 
 const RIGHT_LEG = (
     <div style={{
-        width: "150px",
+        width: "130px",
         height: "10px",
         background: "black",
         position: "absolute",
         top:"210px",
-        right: "-150px",
+        right: "-130px",
         rotate: "30deg",
         transformOrigin: "left top"
     }}>
@@ -71,7 +71,7 @@ const RIGHT_LEG = (
 
 const LEFT_LEG = (
     <div style={{
-        width: "150px",
+        width: "130px",
         height: "10px",
         background: "black",
         position: "absolute",
