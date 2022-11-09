@@ -17,7 +17,8 @@ function App() {
 			letter
 			))
 
-			const addGuessedLetter = useCallback((letter: string) => {
+			const addGuessedLetters = useCallback(
+				(letter: string) => {
 				if (guessedLetters.includes(letter)) return
 
 				setGuessedLetters(currentLetters => [...currentLetters, letter])
@@ -30,7 +31,7 @@ function App() {
 					if (!key.match(/^[a-z]$/)) return
 
 					e.preventDefault()
-					addGuessedLetter(key)
+					addGuessedLetters(key)
 				}
 				document.addEventListener("keypress", handler)
 
@@ -59,7 +60,13 @@ function App() {
 			<HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
 
 			<div style={{ alignSelf: "stretch"}}>
-				<Keyboard />
+				<Keyboard 
+				activeLetters= {guessedLetters.filter(letter =>
+					wordToGuess.includes(letter)
+					)} 
+				inactiveLetters= {incorrectLetters}
+				addGuessedLetters={addGuessedLetters}
+				/>
 			</div>	
 		</div>
 	)
