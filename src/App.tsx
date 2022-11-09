@@ -7,8 +7,8 @@ import words from "./wordList.json"
 function App() {
 
 	const [wordToGuess, setWordToGuess] = useState(() => {
-		return "testings"
-		// return words[Math.floor(Math.random() * words.length)]
+		// return "testings"
+		return words[Math.floor(Math.random() * words.length)]
 	})
 
 	const [guessedLetters, setGuessedLetters] = useState<string[]>([])
@@ -34,7 +34,7 @@ function App() {
 
 			<HangmanDrawing numberOfGuesses = {incorrectLetters.length}/>
 
-			<HangmanWord />
+			<HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
 
 			<div style={{ alignSelf: "stretch"}}>
 				<Keyboard />
