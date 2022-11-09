@@ -7,10 +7,15 @@ import words from "./wordList.json"
 function App() {
 
 	const [wordToGuess, setWordToGuess] = useState(() => {
-		return words[Math.floor(Math.random() * words.length)]
+		return "testings"
+		// return words[Math.floor(Math.random() * words.length)]
 	})
 
 	const [guessedLetters, setGuessedLetters] = useState<string[]>([])
+	const incorrectLetters = guessedLetters.filter(
+		letter => !wordToGuess.includes(
+			letter
+			))
 
 	return (
 		<div style={{
@@ -27,7 +32,7 @@ function App() {
 				Win
 			</div>
 
-			<HangmanDrawing />
+			<HangmanDrawing numberOfGuesses = {incorrectLetters.length}/>
 
 			<HangmanWord />
 
