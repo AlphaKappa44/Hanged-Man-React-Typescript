@@ -51,6 +51,7 @@ function App() {
 			if (key != "Enter") return
 
 			e.preventDefault()
+			setGuessedLetters([])
 			setWordToGuess(getWord())
 		}
 		document.addEventListener("keypress", handler)
